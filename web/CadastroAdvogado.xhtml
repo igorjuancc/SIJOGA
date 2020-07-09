@@ -74,7 +74,7 @@
                         <p:inputText value="#{advogadoMb.advogado.endereco.bairro}" id="bairro" required="true" requiredMessage="Insira o nome do bairro" />
                         <br /><br />
                         <p:outputLabel for="numero" value="Número" /><br />
-                        <p:inputNumber id="numero" value="#{advogadoMb.advogado.endereco.numero}" required="true" requiredMessage="Digite o número da casa" decimalPlaces="0"  />  
+                        <p:inputNumber id="numero" value="#{advogadoMb.advogado.endereco.numero}" thousandSeparator="" minValue="0" maxValue="99999" required="true" requiredMessage="Digite o número da casa" decimalPlaces="0"  />  
                     </div>
                     <div class="ui-g-8">
                         <p:outputLabel for="rua" value="Rua" /><br />
@@ -86,7 +86,7 @@
                     <div class="ui-g-12"><h3>Profissional</h3></div> 
                     <div class="ui-g-4">  
                         <p:outputLabel for="oab" value="Registro OAB" /><br />
-                        <p:inputNumber id="oab" value="#{advogadoMb.advogado.registroOab}" required="true" requiredMessage="Digite o número do registro da OAB" decimalPlaces="0"  />        
+                        <p:inputNumber id="oab" value="#{advogadoMb.advogado.registroOab}" thousandSeparator="" minValue="0" maxValue="9999999999" required="true" requiredMessage="Digite o número do registro da OAB" decimalPlaces="0"  />        
                     </div> 
                     <div class="ui-g-4">
                         <p:outputLabel for="senha" value="Senha" /><br />
